@@ -1,0 +1,885 @@
+Diablo 2 Hex Editing Tutorial By B5!!
+
+Welcome to How to Hex Edit Diablo 2 Save Games For Dummies 
+In this Tutorial you will learn how to use the program hex workshop, and how to make a godly character. I hope this help you to hacking more later on. This is my first tutorial so it will have some errors, but I hope it does not ruin to the tutorial.
+
+Index.
+(To get to a section faster, go to: search and select the find tab and put in the desired sections number surrounded with parentheses (i.e.: (1)) to jump to that section.)
+
+1:Using Hex workshop
+2:Stats
+3:Hp Mana and Stamina
+4:Experience and Level
+5:Money
+6:Classes
+7:nightmare and hell
+8:All Acts
+9:All waypoints
+10:Skill points and Stat points
+11:Paladin Skills
+12:Amazons Skills
+13:Necromancer Skills
+14:Barbarian Skills
+15:Sorceress Skills
+16:Normal Quests
+17:Nightmare Quests
+18:Hell Quests
+19:Credits
+
+(1) Using Hex workshop.
+
+First, you need hex workshop you can get it at http://www.bpsoft.com/downloads/. Now that you have it we can start on the lessons.
+
+Ok open up hex workshop go to file in the upper left corner and go to open we are going to open up a Diablo 2 save game file to do this go to where you have Diablo 2 install most likely 
+C:\program files\diablo2\ now go to the save folder, it is named save, now find a .d2s file and open it now you will see a lot of numbers in the middle of the screen (hex code.)
+
+Now on the left side of the numbers you have the address we will get more in to address in a minute on the right there are .... and stuff. We do not really need to use this now. In the middle that, however, is the hex code and that is what we will be editing.
+
+Now we I will talk about address. An address is a spot in the code where the program looks for info on how to load the file. We want to edit address so we are like a god and shit. We can tell what address we are on by looking in the lower right comer look for offset: 00000000 next to it you will see {0x00000000} this is the hex address you are on now that you no address we will move on.
+
+Now I will talk about hex code it self-hex ok Hex is A base 16 form of counting, 
+0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,10,11,12,13,14,15,16,17,18,19,1a,1b,1c,1d,1e,1f,20 
+Get The Idea? Ok now that we no how hex work we can move on.
+
+Ok now we will do some editing. I will start by showing you how to edit your strength. To do this, find the address 0x00000235. Now that you are there I will tell you about signed byte. This is under where you look to see what address you are on, Now you see there a number next to it, that it what your strength is what I want you to do is type in FF on address 0x00000235. Now you will see that number is now 255 and now your character will have 255 strength. OK now you know how to use a hex editor now the real fun starts.
+
+Now I will you the address of stats and skills and waypoints and acts and all that good shit and let you edit them to what you want. I am does telling you where to edit the hex I will put notes in there for you to read to help you. Now we start!
+(2) Stats
+
+Strength At address: 0x00000235 to 0x00000237
+Dexterity At address: 0x0000023D to 0x0000023F
+Vitality At address: 0x00000241 TO 0x0000043
+Energy At address: 0x00000239 to 0x0000023B
+
+(3) Hp Mana and Stamina
+
+HP 
+
+address: 0x00000246 to 0x00000249 edit hex to 7d 2b 75 to get 2.1 bil HP
+address: 0X0000024A to 0x0000024D do the same as above
+
+
+Mana 
+
+address: 0x0000024E to 0x00000251 edit hex to 7d 2b 75 to get 2.1 bil HP
+address: 0X00000252 to 0x00000255 do the same as above
+
+Stamina 
+
+address: 0x00000256 to 0x00000259 edit hex to 7d 2b 75 to get 2.1 bil HP
+address: 0x0000025A to 0x0000025D do the same as above
+
+(4) Experience
+
+address: 0x00000261 to 0x00000264
+
+Level
+Address: 0x00000024
+
+level has to match experience or you'll find yourself a newbie.
+
+Level Experience
+0 0 
+1 500 
+2 1500 
+3 3750 
+4 7875 
+5 14175 
+6 22680 
+7 32886 
+8 44396 
+9 57715 
+10 72144 
+11 90180 
+12 112725 
+13 140906 
+14 176132 
+15 220165 
+16 275207 
+17 344008 
+18 430010 
+19 537513 
+20 671891 
+21 839864 
+22 1049830 
+23 1312287 
+24 1640359 
+25 2050449 
+26 2563061 
+27 3203826 
+28 3902260 
+29 4663553 
+30 5493363 
+31 6397855 
+32 7383752 
+33 8458379 
+34 9629723 
+35 10906488 
+36 12298162 
+37 13815086 
+38 15468534 
+39 17270791 
+40 19235252 
+41 21376515 
+42 23710491 
+43 26254525 
+44 29027522 
+45 32050088 
+46 35344686 
+47 38935798 
+48 42850109 
+49 47116709 
+50 51767302 
+51 56836449 
+52 62361819 
+53 68384473 
+54 74949165 
+55 82104680 
+56 89904191 
+57 98405658 
+58 107672256 
+59 117772849 
+60 128782495 
+61 140783010 
+62 153863570 
+63 168121381 
+64 183662396 
+65 200602101 
+66 219066380 
+67 239192444 
+68 261129853 
+69 285041630 
+70 311105466 
+71 339515048 
+72 370481492 
+73 404234916 
+74 441026148 
+75 481128591 
+76 524840254 
+77 572485967 
+78 624419793 
+79 681027665 
+80 742730244 
+81 809986056 
+82 883294891 
+83 963201521 
+84 1050299747 
+85 1145236814 
+86 1248718217 
+87 1361512946 
+88 1484459201 
+89 1618470619 
+90 1764543065 
+91 1923762030 
+92 2097310703 
+93 2286478756 
+94 2492671933 
+95 2717422497 
+96 2962400612 
+97 3229426756 
+98 3520485254 
+99 3837739017 
+
+(5) Money
+
+address: 0x00000265 to 0x00000268 (money on your character)
+address: 0x00000269 to 0x00000272 (money in your stash)
+
+(6) Classes
+
+address: 0x00000022 
+For Amazon edit to 00 
+For Sorceresses edit to 01
+For Necromancer edit to 02 
+For Paladin edit to 03 
+For Barbarian edit to 04 
+
+(7) Open up nightmare and hell.
+
+address: 0x00000019 edit hex to 04 this only open nightmare
+address: 0x00000019 edit hex to 14 this will open up nightmare and hell
+
+(8) All Acts.
+
+Normal
+address: 0x0000009A edit hex to 01 =Act 2
+address: 0x000000AA edit hex to 01 =Act 3
+address: 0x000000BA edit hex to 01 =Act 4
+
+Nightmare
+address:0x0000000FA edit hex to 01 =Act 2
+address:0x00000010A edit hex to 01 =Act 3
+address:0x00000011A edit hex to 01 =Act 4
+
+Hell
+address:0x00000015A edit hex to 01 =Act 2
+address:0x00000016A edit hex to 01 =Act 3
+address:0x00000017A edit hex to 01 =Act 4
+
+There is a bug in this you cannot do last quest on act 3.
+
+(9) All waypoints.
+
+Normal all waypoints
+address: 0x000001B6 edit hex to FF 
+address: 0x000001B7 edit hex to FF
+address: 0x000001B8 edit hex to FF 
+address: 0x000001B9 edit hex to 3F
+
+Nightmare all waypoints
+address: 0x000001CE edit hex to FF 
+address: 0x000001CF edit hex to FF 
+address: 0x000001D0 edit hex to FF
+address: 0x000001D1 edit hex to F3
+
+Hell all waypoints
+address: 0x000001E6 edit hex to FF
+address: 0x000001E7 edit hex to FF
+address: 0x000001E8 edit hex to FF
+address: 0x000001E9 edit hex to F3
+
+This open all the waypoints for the act you when you open up an act you all ready have all the waypoints.
+
+(10) Skill points and Stat points.
+
+address:0x00000249 edit Hex From 01 to FF (Skill points)
+address:0x00000245 edit Hex From 01 to FF (Stat points)
+
+(11) Paladin Skills
+
+All Skills can be edited from 01 to 14
+
+Combat Skills
+
+Address: 0X0000026F -->Sacrifice 
+Address: 0x00000270 -->Smite 
+Address: 0x00000274 -->Holy Bolt
+Address: 0x00000279 -->Zeal
+Address: 0x0000027A -->Charge
+Address: 0x0000027E -->Vengeance 
+Address: 0x0000027F -->Bless Hammer 
+Address: 0x00000283 -->Conversion 
+Address: 0x00000284 -->Holy Shield
+Address: 0x00000288 -->Fist of The Heavens
+
+Offensive Auras
+
+Address: 0x00000271 -->Might
+Address: 0x00000275 -->Holy Fire
+Address: 0x00000276 -->Thorns
+Address: 0x0000027B -->Blessed Aim 
+Address: 0x00000280 -->Concentration 
+Address: 0x00000281 -->Holy Freeze
+Address: 0x00000285 -->Holy Shock
+Address: 0x00000286 -->Sanctuary 
+Address: 0x00000289 -->Fanaticism
+Address: 0x0000028A -->A Conviction
+
+Defensive Auras
+
+Address: 0x00000272 -->Prayer
+Address: 0x00000273 -->Resist Fire
+Address: 0x00000277 -->Defiance
+Address: 0x00000278 -->Resist Cold
+Address: 0x0000027C -->Cleansing 
+Address: 0x0000027D -->Resist Lightning
+Address: 0x00000282 -->Vigor 
+Address: 0x00000287 -->Meditation
+Address: 0x0000028B -->Redemption
+Address: 0x0000028C -->Salvation
+
+(12) Amazons Skills
+
+All Skills can be editing from 01 to 14
+
+Skill Names
+
+Bow and Crossbow Skills
+
+Address: 0X0000026F -->Magic arrow 
+Address: 0x00000270 -->Fire Arrow 
+Address: 0x00000274 -->Cold Arrow 
+Address: 0x00000275 -->Multiple Shot
+Address: 0x00000279 -->Exploding Arrow 
+Address: 0x0000027E -->Ice Arrow 
+Address: 0x0000027F -->Guided Arrow
+Address: 0x00000283 -->Strafe 
+Address: 0x00000284 -->Strafe 
+Address: 0x00000288 -->Freezing Arrow
+
+Passive and Magic Skills
+
+Address: 0x00000271 -->inner Sight
+Address: 0x00000272 -->Critical Strike
+Address: 0x00000276 -->Dodge 
+Address: 0x0000027A -->Slow Missiles 
+Address: 0x0000027B -->Avoid
+Address: 0x00000280 -->Penetrate
+Address: 0x00000285 -->decoy
+Address: 0x00000286 -->Evade 
+Address: 0x00000289 -->Valkyrie
+Address: 0x0000028A -->Pierce
+
+Spear and Javelin Skills
+
+Address: 0x00000273 -->Jab
+Address: 0x00000277 -->Power Strike
+Address: 0x00000278 -->Poison Javelin 
+Address: 0x0000027C -->Impale 
+Address: 0x0000027D -->Lightning Bolt
+Address: 0x00000281 -->Charged Strike
+Address: 0x00000282 -->Plague Javelin
+Address: 0x00000287 -->Fend
+Address: 0x0000028B -->Lightning Strike
+Address: 0x0000028C -->Lightning Strike
+
+(13) Necromancer Skills
+
+All Skills can be editing from 01 to 14
+
+Curses
+
+Address: 0x0000026B -->Amplify Damage
+Address: 0x00000270 -->Dim Vision
+Address: 0x00000271 -->Weaken
+Address: 0x00000275 -->Iron Maiden
+Address: 0x00000276 -->Terror
+Address: 0x0000027A -->Confuse
+Address: 0x0000027B -->Life Tap
+Address: 0x0000027F -->Attract
+Address: 0x00000280 -->Decertify
+Address: 0x00000284 -->Lower Resist
+
+Poison and Bone Spells
+
+Address: 0x0000026C -->Teeth
+Address: 0x0000026D -->Bone Arrow
+Address: 0x00000272 -->Poison Dagger
+Address: 0x00000273 -->Corpse Explosion
+Address: 0x00000277 -->Bone Wall
+Address: 0x0000027C -->Poison Explosion
+Address: 0x0000027B -->Bone Spear
+Address: 0x00000281 -->Bone Prison
+Address: 0x00000285 -->Prison Nova
+Address: 0x00000286 -->Bone Spirit
+
+Summoning Spells
+
+Address: 0x0000026F -->Raise Skeleton
+Address: 0x0000026E -->Skeleton Mastery
+Address: 0x00000274 -->Clay Golem
+Address: 0x00000278 -->Golem Mastery
+Address: 0x00000279 -->Raise Skeletal Mage
+Address: 0x0000027E -->Blood Golem
+Address: 0x00000282 -->Summon Resist
+Address: 0x00000283 -->Iron Golem
+Address: 0x00000287 -->Fire Golem
+Address: 0x00000288 -->Revive
+
+
+(14) Barbarian Skills
+
+All Skills can be edited from 01 to 14
+
+Combat Skills
+
+Address: 0x0000026B -->Bash
+Address: 0x00000271 -->Leap
+Address: 0x00000272 -->Double Swing
+Address: 0x00000278 -->Stun
+Address: 0x00000279 -->Double Throw
+Address: 0x0000027C -->Leap Attack
+Address: 0x0000027D -->Concentrate
+Address: 0x00000280 -->Frenzy
+Address: 0x00000284 -->Whirlwind
+Address: 0x00000285 -->Berserk
+
+Combat Masteries
+
+Address: 0x0000026C -->Sword Mastery
+Address: 0x0000026D -->Axe Mastery
+Address: 0x0000026E -->Mace Mastery
+Address: 0x00000273 -->Pole Arm Mastery
+Address: 0x00000274 -->Throwing Mastery
+Address: 0x00000275 -->Spear Mastery
+Address: 0x0000027A -->Increased Stamina
+Address: 0x0000027E -->Iron Skin
+Address: 0x00000281 -->Increased Speed
+Address: 0x00000286 -->Natural resistance
+
+War Cries
+
+Address: 0x0000026F -->Howl
+Address: 0x00000270 -->find Potion
+Address: 0x00000276 -->Taunt
+Address: 0x00000277 -->Shout
+Address: 0x0000027B -->Find Item
+Address: 0x0000027F -->Battle Cry
+Address: 0x00000282 -->Battle Orders
+Address: 0x00000283 -->Grim Ward
+Address: 0x00000287 -->War Cry
+Address: 0x00000288 -->Battle Command
+
+(15) Sorceress Skills
+
+All Skills can be edited from 01 to 14
+
+Fire Spells
+
+Address: 0x0000026B -->Fire Bold
+Address: 0x0000026C -->Warmth
+Address: 0x00000270 -->Inferno
+Address: 0x00000275 -->Blaze
+Address: 0x00000276 -->Fire Ball
+Address: 0x0000027A -->Fire Wall
+Address: 0x0000027B -->Enchant
+Address: 0x0000027F -->Meteor
+Address: 0x00000284 -->Fire Mastery
+Address: 0x00000285 -->Hydra
+
+Lightning Spells
+
+Address: 0x0000026D -->Charged Bolt
+Address: 0x00000271 -->Static Field
+Address: 0x00000272 -->Telekinesis
+Address: 0x00000277 -->Nova
+Address: 0x00000278 -->Lightning
+Address: 0x0000027C -->Chain Lightning
+Address: 0x0000027D -->Teleport
+Address: 0x00000280 -->Thunder Storm
+Address: 0x00000281 -->Energy Shield
+Address: 0x00000286 -->Lightning Mastery
+
+Cold Spells
+
+Address: 0x0000026E -->Ice Bolt
+Address: 0x0000026F -->Frozen Armor
+Address: 0x00000273 -->Frost Nova
+Address: 0x00000274 -->Ice Blast
+Address: 0x00000279 -->Shiver Armor
+Address: 0x0000027E -->Glacial Spike
+Address: 0x00000282 -->Blizzard
+Address: 0x00000283 -->Chilling Armor
+Address: 0x00000287 -->Frozen Orb
+Address: 0x00000288 -->Cold Mastery
+
+(16) Normal Skills level Quests
+
+Act 1 Quests
+
+Den of Evil 
+
+address:0x0000008E edit hex to 04 -->start of quest 
+address:0x0000008E edit hex to 06 -->get quest reward 
+address:0x0000008E edit hex to 07 and address:0x0000008F 10 --> quest done
+
+Sister's Burial Grounds
+
+address:0x00000090 edit hex to 04 -->start of quest 
+address:0x00000090 edit hex to 06 -->get quest reward 
+address:0x00000090 edit hex to 07 and address:0x00000091 10 --> quest done
+
+
+The search for Cain
+
+address:0x00000094 edit hex to 04 -->start of quest 
+address:0x00000094 edit hex to 06 -->get quest reward 
+address:0x00000094 edit hex to 07 and address:0x00000095 10 --> quest done
+
+The Forgotten Tower
+
+address:0x00000096 edit hex to 04 -->start of quest 
+address:0x00000096 edit hex to 06 -->get quest reward 
+address:0x00000096 edit hex to 07 and address:0x00000097 10 --> quest done
+
+Tools of the trade
+
+address:0x00000092 edit hex to 04 -->start of quest 
+address:0x00000092 edit hex to 06 -->get quest reward 
+address:0x00000092 edit hex to 07 and address:0x00000093 10 --> quest done
+
+Sister to the Slaughter
+
+address:0x00000098 edit hex to 04 -->start of quest 
+address:0x00000098 edit hex to 06 -->get quest reward 
+address:0x00000098 edit hex to 07 and address:0x00000099 10 --> quest done
+
+Act 2 Quests
+
+Radament's Lair
+
+address:0x0000009E edit hex to 04 -->start of quest 
+address:0x0000009E edit hex to 06 -->get quest reward 
+address:0x0000009E edit hex to 07 and address:0x0000009F 10 --> quest done
+
+The Horadric Staff
+
+address:0x000000A0 edit hex to 04 -->start of quest 
+address:0x000000A0 edit hex to 06 -->get quest reward 
+address:0x000000A0 edit hex to 07 and address:0x000000A1 10 --> quest done
+
+Tainted Sun
+
+address:0x000000A2 edit hex to 04 -->start of quest 
+address:0x000000A2 edit hex to 06 -->get quest reward 
+address:0x000000A2 edit hex to 07 and address:0x000000A3 10 --> quest done
+
+Arcane Sanctuary
+
+address:0x000000A4 edit hex to 04 -->start of quest 
+address:0x000000A4 edit hex to 06 -->get quest reward 
+address:0x000000A4 edit hex to 07 and address:0x000000A5 10 --> quest done
+
+The Summoner
+
+address:0x000000A6 edit hex to 04 -->start of quest 
+address:0x000000A6 edit hex to 06 -->get quest reward 
+address:0x000000A6 edit hex to 07 and address:0x000000A7 10 --> quest done
+
+The Seven Tombs
+
+address:0x000000A8 edit hex to 04 -->start of quest 
+address:0x000000A8 edit hex to 06 -->get quest reward 
+address:0x000000A8 edit hex to 07 and address:0x000000A9 10 --> quest done
+
+Act 3 Quests
+
+Lam Esen's Tomb
+
+address:0x000000AE edit hex to 04 -->start of quest 
+address:0x000000AE edit hex to 06 -->get quest reward 
+address:0x000000AE edit hex to 07 and address:0x000000AF 10 --> quest done
+
+Blade of the Old Religion
+
+address:0x000000B0 edit hex to 04 -->start of quest 
+address:0x000000B0 edit hex to 06 -->get quest reward 
+address:0x000000B0 edit hex to 07 and address:0x000000B1 10 --> quest done
+
+Khalim's Will
+
+address:0x000000B2 edit hex to 04 -->start of quest 
+address:0x000000B2 edit hex to 06 -->get quest reward 
+address:0x000000B2 edit hex to 07 and address:0x000000B3 10 --> quest done
+
+The Golden Bird
+
+address:0x000000B4 edit hex to 04 -->start of quest 
+address:0x000000B4 edit hex to 06 -->get quest reward 
+address:0x000000B4 edit hex to 07 and address:0x000000B5 10 --> quest done
+
+The Blackened Temple
+
+address:0x000000B6 edit hex to 04 -->start of quest 
+address:0x000000B6 edit hex to 06 -->get quest reward 
+address:0x000000B6 edit hex to 07 and address:0x000000B7 10 --> quest done
+
+The Guardian
+
+address:0x000000B8 edit hex to 04 -->start of quest 
+address:0x000000B8 edit hex to 06 -->get quest reward 
+address:0x000000B8 edit hex to 07 and address:0x000000B9 10 --> quest done
+
+Act 4 Quests
+
+The Fallen Angel
+
+address:0x000000BE edit hex to 04 -->start of quest 
+address:0x000000BE edit hex to 06 -->get quest reward 
+address:0x000000BE edit hex to 07 and address:0x000000BF 10 --> quest done
+
+Hell's Forge
+
+address:0x000000C2 edit hex to 04 -->start of quest 
+address:0x000000C2 edit hex to 06 -->get quest reward 
+address:0x000000C2 edit hex to 07 and address:0x000000C3 10 --> quest done
+
+Terror's End
+
+address:0x000000C0 edit hex to 04 -->start of quest 
+address:0x000000C0 edit hex to 06 -->get quest reward 
+address:0x000000C0 edit hex to 07 and address:0x000000C1 10 --> quest done
+
+(17) Nightmare Skill Level Quests
+
+Act 1 Quests
+
+Den of Evil 
+
+address:0x000000EE edit hex to 04 -->start of quest 
+address:0x000000EE edit hex to 06 -->get quest reward 
+address:0x000000EE edit hex to 07 and address:0x000000EF 10 --> quest done
+
+Sister's Burial Grounds
+
+address:0x000000F0 edit hex to 04 -->start of quest 
+address:0x000000F0 edit hex to 06 -->get quest reward 
+address:0x000000F0 edit hex to 07 and address:0x000000F1 10 --> quest done
+
+
+The search for Cain
+
+address:0x000000F4 edit hex to 04 -->start of quest 
+address:0x000000F4 edit hex to 06 -->get quest reward 
+address:0x000000F4 edit hex to 07 and address:0x000000F5 10 --> quest done
+
+The Forgotten Tower
+
+address:0x000000F6 edit hex to 04 -->start of quest 
+address:0x000000F6 edit hex to 06 -->get quest reward 
+address:0x000000F6 edit hex to 07 and address:0x000000F7 10 --> quest done
+
+Tools of the trade
+
+address:0x000000F2 edit hex to 04 -->start of quest 
+address:0x000000F2 edit hex to 06 -->get quest reward 
+address:0x000000F2 edit hex to 07 and address:0x000000F3 10 --> quest done
+
+Sister to the Slaughter
+
+address:0x000000F8 edit hex to 04 -->start of quest 
+address:0x000000F8 edit hex to 06 -->get quest reward 
+address:0x000000F8 edit hex to 07 and address:0x000000F9 10 --> quest done
+
+Act 2 Quests
+
+Radament's Lair
+
+address:0x000000FE edit hex to 04 -->start of quest 
+address:0x000000FE edit hex to 06 -->get quest reward 
+address:0x000000FE edit hex to 07 and address:0x000000FF 10 --> quest done
+
+The Horadric Staff
+
+address:0x00000100 edit hex to 04 -->start of quest 
+address:0x00000100 edit hex to 06 -->get quest reward 
+address:0x00000100 edit hex to 07 and address:0x00000101 10 --> quest done
+
+Tainted Sun
+
+address:0x00000102 edit hex to 04 -->start of quest 
+address:0x00000102 edit hex to 06 -->get quest reward 
+address:0x00000102 edit hex to 07 and address:0x00000103 10 --> quest done
+
+Arcane Sanctuary
+
+address:0x00000104 edit hex to 04 -->start of quest 
+address:0x00000104 edit hex to 06 -->get quest reward 
+address:0x00000104 edit hex to 07 and address:0x00000105 10 --> quest done
+
+The Summoner
+
+address:0x00000106 edit hex to 04 -->start of quest 
+address:0x00000106 edit hex to 06 -->get quest reward 
+address:0x00000106 edit hex to 07 and address:0x000000A7 10 --> quest done
+
+The Seven Tombs
+
+address:0x00000108 edit hex to 04 -->start of quest 
+address:0x00000108 edit hex to 06 -->get quest reward 
+address:0x00000108 edit hex to 07 and address:0x00000109 10 --> quest done
+
+Act 3 Quests
+
+Lam Esen's Tomb
+
+address:0x0000010E edit hex to 04 -->start of quest 
+address:0x0000010E edit hex to 06 -->get quest reward 
+address:0x0000010E edit hex to 07 and address:0x0000010F 10 --> quest done
+
+Blade of the Old Religion
+
+address:0x00000110 edit hex to 04 -->start of quest 
+address:0x00000110 edit hex to 06 -->get quest reward 
+address:0x00000110 edit hex to 07 and address:0x00000111 10 --> quest done
+
+Khalim's Will
+
+address:0x00000112 edit hex to 04 -->start of quest 
+address:0x00000112 edit hex to 06 -->get quest reward 
+address:0x00000112 edit hex to 07 and address:0x00000113 10 --> quest done
+
+The Golden Bird
+
+address:0x00000114 edit hex to 04 -->start of quest 
+address:0x00000114 edit hex to 06 -->get quest reward 
+address:0x00000114 edit hex to 07 and address:0x00000115 10 --> quest done
+
+The Blackened Temple
+
+address:0x00000116 edit hex to 04 -->start of quest 
+address:0x00000116 edit hex to 06 -->get quest reward 
+address:0x00000116 edit hex to 07 and address:0x00000117 10 --> quest done
+
+The Guardian
+
+address:0x00000118 edit hex to 04 -->start of quest 
+address:0x00000118 edit hex to 06 -->get quest reward 
+address:0x00000118 edit hex to 07 and address:0x00000119 10 --> quest done
+
+Act 4 Quests
+
+The Fallen Angel
+
+address:0x0000011E edit hex to 04 -->start of quest 
+address:0x0000011E edit hex to 06 -->get quest reward 
+address:0x0000011E edit hex to 07 and address:0x0000011F 10 --> quest done
+
+Hell's Forge
+
+address:0x00000122 edit hex to 04 -->start of quest 
+address:0x00000122 edit hex to 06 -->get quest reward 
+address:0x00000122 edit hex to 07 and address:0x0000123 10 --> quest done
+
+Terror's End
+
+address:0x00000120 edit hex to 04 -->start of quest 
+address:0x00000120 edit hex to 06 -->get quest reward 
+address:0x00000120 edit hex to 07 and address:0x00000121 10 --> quest done
+
+(18) Hell Skill Level Quests
+
+Act 1 Quests
+
+Den of Evil 
+
+address:0x0000014E edit hex to 04 -->start of quest 
+address:0x0000014E edit hex to 06 -->get quest reward 
+address:0x0000014E edit hex to 07 and address:0x0000014F 10 --> quest done
+
+Sister's Burial Grounds
+
+address:0x00000150 edit hex to 04 -->start of quest 
+address:0x00000150 edit hex to 06 -->get quest reward 
+address:0x00000150 edit hex to 07 and address:0x00000151 10 --> quest done
+
+
+The search for Cain
+
+address:0x00000154 edit hex to 04 -->start of quest 
+address:0x00000154 edit hex to 06 -->get quest reward 
+address:0x00000154 edit hex to 07 and address:0x00000155 10 --> quest done
+
+The Forgotten Tower
+
+address:0x00000156 edit hex to 04 -->start of quest 
+address:0x00000156 edit hex to 06 -->get quest reward 
+address:0x00000156 edit hex to 07 and address:0x00000157 10 --> quest done
+
+Tools of the trade
+
+address:0x00000152 edit hex to 04 -->start of quest 
+address:0x00000152 edit hex to 06 -->get quest reward 
+address:0x00000152 edit hex to 07 and address:0x00000153 10 --> quest done
+
+Sister to the Slaughter
+
+address:0x00000158 edit hex to 04 -->start of quest 
+address:0x00000158 edit hex to 06 -->get quest reward 
+address:0x00000158 edit hex to 07 and address:0x00000159 10 --> quest done
+
+Act 2 Quests
+
+Radament's Lair
+
+address:0x0000015E edit hex to 04 -->start of quest 
+address:0x0000015E edit hex to 06 -->get quest reward 
+address:0x0000015E edit hex to 07 and address:0x0000015F 10 --> quest done
+
+The Horadric Staff
+
+address:0x00000160 edit hex to 04 -->start of quest 
+address:0x00000160 edit hex to 06 -->get quest reward 
+address:0x00000160 edit hex to 07 and address:0x00000161 10 --> quest done
+
+Tainted Sun
+
+address:0x00000162 edit hex to 04 -->start of quest 
+address:0x00000162 edit hex to 06 -->get quest reward 
+address:0x00000162 edit hex to 07 and address:0x00000163 10 --> quest done
+
+Arcane Sanctuary
+
+address:0x00000164 edit hex to 04 -->start of quest 
+address:0x00000164 edit hex to 06 -->get quest reward 
+address:0x00000164 edit hex to 07 and address:0x00000165 10 --> quest done
+
+The Summoner
+
+address:0x00000166 edit hex to 04 -->start of quest 
+address:0x00000166 edit hex to 06 -->get quest reward 
+address:0x00000166 edit hex to 07 and address:0x00000167 10 --> quest done
+
+The Seven Tombs
+
+address:0x00000168 edit hex to 04 -->start of quest 
+address:0x00000168 edit hex to 06 -->get quest reward 
+address:0x00000168 edit hex to 07 and address:0x00000169 10 --> quest done
+
+Act 3 Quests
+
+Lam Esen's Tomb
+
+address:0x0000016E edit hex to 04 -->start of quest 
+address:0x0000016E edit hex to 06 -->get quest reward 
+address:0x0000016E edit hex to 07 and address:0x0000016F 10 --> quest done
+
+Blade of the Old Religion
+
+address:0x00000170 edit hex to 04 -->start of quest 
+address:0x00000170 edit hex to 06 -->get quest reward 
+address:0x00000170 edit hex to 07 and address:0x00000171 10 --> quest done
+
+Khalim's Will
+
+address:0x00000172 edit hex to 04 -->start of quest 
+address:0x00000172 edit hex to 06 -->get quest reward 
+address:0x00000172 edit hex to 07 and address:0x00000173 10 --> quest done
+
+The Golden Bird
+
+address:0x00000174 edit hex to 04 -->start of quest 
+address:0x00000174 edit hex to 06 -->get quest reward 
+address:0x00000174 edit hex to 07 and address:0x00000175 10 --> quest done
+
+The Blackened Temple
+
+address:0x00000176 edit hex to 04 -->start of quest 
+address:0x00000176 edit hex to 06 -->get quest reward 
+address:0x00000176 edit hex to 07 and address:0x00000177 10 --> quest done
+
+The Guardian
+
+address:0x00000178 edit hex to 04 -->start of quest 
+address:0x00000178 edit hex to 06 -->get quest reward 
+address:0x00000178 edit hex to 07 and address:0x00000179 10 --> quest done
+
+Act 4 Quests
+
+The Fallen Angel
+
+address:0x0000017E edit hex to 04 -->start of quest 
+address:0x0000017E edit hex to 06 -->get quest reward 
+address:0x0000017E edit hex to 07 and address:0x0000017F 10 --> quest done
+
+Hell's Forge
+
+address:0x00000182 edit hex to 04 -->start of quest 
+address:0x00000182 edit hex to 06 -->get quest reward 
+address:0x00000182 edit hex to 07 and address:0x0000183 10 --> quest done
+
+Terror's End
+
+address:0x00000180 edit hex to 04 -->start of quest 
+address:0x00000180 edit hex to 06 -->get quest reward 
+address:0x00000180 edit hex to 07 and address:0x00000181 10 --> quest done
+
+(19) Credits
+
+Tutorial By: B5
+Any questions, feel free to send them to b5@japan.com
+
+Thanks to:
+BYO~BodyBag for spelling corrections.
+
+VirtualChaos for grammar corrections.
